@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box; /*Para que el border, el padding, etc no afecte el ancho de los elementos*/
+    font-size: 62.5%;  /*Para que 1rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit; /*Hereda del elemento padre, que en este caso viene siendo el selector html de arriba*/
+}
+.boton{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none ;
+}

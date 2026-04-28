@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box; /*Para que el border, el padding, etc no afecte el ancho de los elementos*/
+    font-size: 62.5%;  /*Para que 1rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit; /*Hereda del elemento padre, que en este caso viene siendo el selector html de arriba*/
+}
+.campo {
+    margin-bottom: 0.5rem;
+}
+.campo-dato {
+    display: flex;
+    flex-direction: column;
+}
+.campo-label {
+    flex: 0 0 9rem;
+    text-align: right;
+    font-size: 12px;
+}
+.campo-id-sede {
+    width: 4rem;
+}
+.columna-id {
+    text-align: center;
+    width: 15%;
+}
+.contenedor-campos {
+    margin-top: 2rem;
+}
+.contenedor-tabla {
+    margin-top: 2rem;
+}
+@media (min-width: 850px) {
+    .dos-columnas{
+        max-width: 1200px;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 33.3% 33.3%;
+    }
+   
+}
+
+.tabla {
+    margin-top: 5px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 25rem;
+    padding: 3px;
+
+}

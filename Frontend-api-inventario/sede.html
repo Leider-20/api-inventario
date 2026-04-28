@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro sedes</title>
+    <!--<link href="../CSS/sede.css" rel="stylesheet">-->
+    <link href="sede.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <h2>Registrar las sedes</h2>
+
+        <div class="contenedor-campos">
+            <div class="campo">
+                <label class="campo-label">Nombre de la sede</label>
+                <input class="campo-dato" type="text" id="input_sede_nombre">
+            </div>
+            <div class="campo">
+                <label class="campo-label">Ubicación</label>
+                <input class="campo-dato" type="text" id="input_sede_ubicacion">
+            </div>
+            <div>
+                <input type="submit" value="Registrar" id="boton_Guardar_sede">
+            </div>
+        </div>
+        
+        <div class="dos-columnas">
+
+            <div class="contenedor-tabla">
+                <h3>Tabla para el registro de las sedes</h3>
+                <table class="tabla" id="tabla_sede">
+                    <thead>
+                        <th class="columna-id">ID</th>
+                        <th>Nombre de la sede</th>
+                        <th>ubicación</th>
+                    </thead>
+                    <!-- <tr>
+                        <td class="columna-id">1</td>
+                        <td>sede 1</td>
+                    </tr> -->
+                </table>
+            </div>
+    
+            <div class="contenedor-campos" >
+                <h3>Buscar los almacenes guardados en una sede</h3>
+                <div>
+                    <label class="campo-label">Ingrese el ID de la sede:</label>
+                    <input class="campo-id-sede" type="number" placeholder="ID" id="input_sede_id"> 
+                    <input type="submit" value="Buscar" id="boton_buscar_alm">
+                </div>
+
+                <table class="tabla" id="tabla_sede_alm">
+                    <thead>
+                        <th class="columna-id">ID</th>
+                        <th>Nombre del almacén</th>
+                    </thead>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!--<script src = "../JS/sede.js"></script>-->
+    <script src = "sede.js"></script>
+</body>
+
+</html>
