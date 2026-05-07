@@ -1,7 +1,7 @@
 # API_Inventario
 ### REST API de un inventario de productos.
 * Backend hecho con:
-    * Java
+    * Java 17
     * SpringBoot
     * Maven
     * Oracle SQL
